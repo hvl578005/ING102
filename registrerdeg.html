@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang = "no">
+
+<head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="design.css">
+
+
+<title>BLI SAMMEN</title>
+
+</head>
+
+<body>
+
+
+ <!-- HER ER HEADER, KONSTANT -->
+                <div class="header">
+                  <h1>BLISAMMEN</h1>
+                </div>
+               
+
+
+
+ <!-- HER ER HOVEDLINKENE, KONSTANT -->
+ <div class="topnav">
+	<a href="index.html" >Forsiden</a>
+	<ul><li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Om oss</a>
+			<div class="dropdown-content">
+				<a href="kathrine.html">Kathrine</a>
+				<a href="julie.html">Julie</a>
+				<a href="ErlingSide.html">Erling</a>
+				<a href="einar.html">Einar</a>
+				<a href="prosjektetvart.html">Prosjektet vårt</a>
+			</div></li></ul>
+			<a href="registrerdeg.html" >Registrer deg</a>
+			<ul><li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Last ned</a>
+			<div class="dropdown-content">
+			<a href="filer/prosjektbeskrivelse.pdf" download="Prosjektbeskrivelse">Prosjektbeskrivelse</a>
+			<a href="filer/statusrapport.pdf" download="Statusrapport">Statusrapport</a>
+		</div></li></ul>
+		</div>
+
+                  
+
+ <!-- HER ER CONTENT OG SIDEBAR -->
+
+                  <div id="wrapper">
+
+
+
+
+                     <!-- CONTENT -->
+
+
+
+                     <div id="leftcolumn">
+
+                            <div class="container">
+                                    <form action="action_page.php">
+                                  
+                                      <label for="fname">Fornavn</label>
+                                      <input type="text" id="fname" name="firstname" placeholder="Fornavn">
+                                  <br>
+                                      <label for="lname">Etternavn</label>
+                                      <input type="text" id="lname" name="lastname" placeholder="Etternavn">
+                                      <br>
+
+                                      <label for="email">Email</label>
+                                      <input type="text" id="email" name="email" placeholder="Email">
+                                      <br>
+
+                                      <label for="år">Fødelsår</label>
+                                      <select id="år" name="Fødselsår">
+                                        <option value="99">1999</option>
+                                        <option value="98">1998</option>
+                                        <option value="97">1997</option>
+                                        <option value="96">1996</option>
+                                        <option value="95">1995</option>
+                                        <option value="94">1994</option>
+                                        <option value="93">1993</option>
+                                        <option value="92">1992</option>
+                                        <option value="91">1991</option>
+                                        <option value="90">1990</option>
+
+                                      </select>
+
+                                      <BR>
+
+                                      <label for="bosted">Adresse</label>
+                                      <input type="text" id="bosted" name="Adresse" placeholder="Adresse"> <br>
+
+                                      
+
+                                      <label for="gender">Kjønn</label>
+                                      <select id="gender" name="Kjønn">
+                                        <option value="kvinne">Kvinne</option>
+                                        <option value="mann">Mann</option>
+                                        <option value="annet">Annet</option>
+                                      </select>
+
+                                      <br>
+                                      <label for="sok">Søker</label>
+                                      <select id="sok" name="Søker">
+                                        <option value="kvinne">Kvinne</option>
+                                        <option value="mann">Mann</option>
+                                        <option value="annet">Begge</option>
+                                      </select>
+
+<br>
+                                        <label for="school">Universitet / Høyskole</label>
+                                      <select id="school" name="Universitet / Høyskole">
+                                        <option value="uib">Universitetet i Bergen</option>
+                                        <option value="hvl">Høgskulen på Vestlandet</option>
+                                        <option value="nhh">Norges Handelshøyskole</option>
+                                        <option value="nla">NLA Høgskolen</option>
+                                        <option value="hk">Høyskolen Kristiania</option>
+                                        <option value="bi">Handelshøyskolen BI</option>
+                                        <option value="sjk">Sjøkrigsskolen</option>
+                                        <option value="ba">Bergen Artitektsskole</option>
+
+                                      </select>
+
+                                  <br>
+
+                                  <label for="studnr">Student nr</label>
+                                  <input type="text" id="studnr" name="studnr" placeholder="Student nr"> <br>
+</form>
+
+                                      
+                                  <form action="upload.php" method="post" enctype="multipart/form-data">
+                                    Last opp et bilde av deg selv<br>
+                                    <input type="file" name="fileToUpload" id="fileToUpload"><br>
+                                    
+                                </form>
+
+                                <br>
+                                    <textarea id="subject" name="subject" placeholder="Skriv litt om deg selv!" 
+                                      style="height:200px"></textarea><br>
+                                  <a href="submit.html"><img src="img/submit.png" width="80" height="40" alt="Submit"/></a><br>
+
+                                   <!-- <input type="submit" value="Submit">
+                                      <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>-->
+                                    
+
+                                   
+<br><br>
+                                  </div>
+                </div>
+                
+
+
+
+
+
+
+
+
+                     <!-- SIDEBAR, KONSTANT -->
+
+                   
+                     <div id="rightcolumn">
+                      <h2>KONTAKT</h2>
+                      
+                  <p><b>Adresse</b>
+          <br>Brønndalen 28
+  <br>5176, Loddefjord<br>Norge<br><b>Tlf</b> <br>+46694148<br>
+
+  <br><a href="datingside@gmail.com">Kontakt oss på email</a>
+  <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </div>
+                    </div>
+
+
+          
+
+</body>
+
+</html>
+
+
+
+<!-- LINKER 
+
+https://www.w3schools.com/howto/howto_css_contact_form.asp
+
+https://www.w3schools.com/php/php_forms.asp 
+
+https://www.w3schools.com/php/php_form_validation.asp PHP KODE FOR FORM
+
+ https://www.w3schools.com/Php/php_file_upload.asp HVORDAN LASTE OPP BILDE
+
+-->

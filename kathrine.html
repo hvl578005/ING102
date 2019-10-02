@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang = "no">
+
+<head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="design.css">
+
+<title>BLI SAMMEN</title>
+
+<style>
+    table, th, td {
+        border-collapse:collapse;
+        color: black;
+        width: 60%;
+        font-family: Roboto, 'Gibson', sans-serif, sans-serif; 
+    }
+    th, td {
+        padding: 5px;
+        color: black;
+        font-family: Roboto, 'Gibson', sans-serif, sans-serif; 
+    }
+    </style>
+
+</head>
+
+<body>
+
+
+ <!-- HER ER HEADER, KONSTANT -->
+                <div class="header">
+                  <h1>BLISAMMEN</h1>
+                </div>
+               
+
+
+
+ <!-- HER ER HOVEDLINKENE, KONSTANT -->
+ <div class="topnav">
+	<a href="index.html" >Forsiden</a>
+	<ul><li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Om oss</a>
+			<div class="dropdown-content">
+				<a href="kathrine.html">Kathrine</a>
+				<a href="julie.html">Julie</a>
+				<a href="ErlingSide.html">Erling</a>
+				<a href="einar.html">Einar</a>
+				<a href="prosjektetvart.html">Prosjektet vårt</a>
+			</div></li></ul>
+			<a href="registrerdeg.html" >Registrer deg</a>
+			<ul><li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Last ned</a>
+			<div class="dropdown-content">
+			<a href="filer/prosjektbeskrivelse.pdf" download="Prosjektbeskrivelse">Prosjektbeskrivelse</a>
+			<a href="filer/statusrapport.pdf" download="Statusrapport">Statusrapport</a>
+		</div></li></ul>
+		</div>
+
+ <!-- HER ER CONTENT OG SIDEBAR -->
+
+                  <div id="wrapper">
+
+                     <!-- CONTENT -->
+
+                        <div id="leftcolumn">
+
+                                <h2>KATHRINE HERMANSEN</h2>
+                                <h5>HTML- OG DESIGN-ANSVARLIG | DATAINGENIØR | HØGSKULEN PÅ VESTLANDET</h5>
+                                <div><img src="img/kathrine.jpg" width="250" height="250" alt="Kathrine" >
+                                    <p> Dette er HTML-ansvarlig Kathrine Hermansen. Hun har ansvar for alt med HTML og design på nettsiden. 
+                                        Hun er 20 år gammel og kommer fra en liten plass nær Sandnes med navn Hommersåk. 
+                                        Nylig begynte hun på bacheloren Dataingeniør på Høgskulen på Vestlandet, etter å hatt et år friår der hun jobbet, 
+                                        og studerte filosofi og religion i 3 måneder i Roma. 
+                                        <br></p><h5>SOSIALE MEDIER</h5><p>
+                                        
+                     <a href="http://instagram.com/kathrinehj"><img src="img/instagram.png" width="40" height="40" alt="Instagram"/></a>
+                     <a href="http://snapchat.com/add/kathrinehj"><img src="img/snapchat.png" width="40" height="40" alt="Instagram"/></a>
+                                    </p>
+                                      <br>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <table id="t01" >
+                                        <tr> 
+                                            <th>
+                                                <strong>Interesser</strong>
+                                            </th>
+                                            <th>
+                                    
+                                            </th>
+                                        </tr>
+                                            
+                                            <tr>
+                                                <td>Reising</td>
+                                    <td>Trening</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Bøker
+                                                </td>
+                                                <td>Maling og tegning
+                                                </td> 
+                                                </tr>
+                                                <tr><td>Filmer</td>
+                                                    <td>Musikk</td>
+                                    
+                                    
+                                                </tr>
+                                    
+                                                  
+                                                </table>
+                                    
+                                                <br>
+<br>                                    <!-- KALLER PÅ XML -->
+                                                <script>
+                                                    if (window.XMLHttpRequest)
+                                                      {// code for IE7+, Firefox, Chrome, Opera, Safari
+                                                      xmlhttp=new XMLHttpRequest();
+                                                      }
+                                                    else
+                                                      {// code for IE6, IE5
+                                                      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                                                      }
+                                                    xmlhttp.open("GET","kathrine.xml",false);
+                                                    xmlhttp.send();
+                                                    xmlDoc=xmlhttp.responseXML; 
+                                                    
+                                                    document.write("<table><tr><th>MINE FAVORITT REISEMÅL</th>");
+                                                    var x=xmlDoc.getElementsByTagName("reisemål");
+                                                    for (i=0;i<x.length;i++)
+                                                      { 
+                                                        document.write("<tr><td>");
+                                                      document.write(x[i].getElementsByTagName("nr1")[0].childNodes[0].nodeValue);
+                                                      document.write("<tr><td>");
+                                                      document.write(x[i].getElementsByTagName("nr2")[0].childNodes[0].nodeValue);
+                                                      document.write("<tr><td>");
+                                                      document.write(x[i].getElementsByTagName("nr3")[0].childNodes[0].nodeValue);
+                                                      document.write("<tr><td>");
+                                                      document.write(x[i].getElementsByTagName("nr4")[0].childNodes[0].nodeValue);
+                                                      document.write("<tr><td>");
+                                                      document.write(x[i].getElementsByTagName("nr5")[0].childNodes[0].nodeValue);
+                                                      document.write("</td></tr>");
+                                                      }
+                                                    document.write("</table>");
+                                                    </script>
+
+
+
+                                            </div>
+                    </div>
+
+                     <!-- SIDEBAR, KONSTANT -->
+
+                    <div id="rightcolumn">
+                            <h2>KONTAKT</h2>
+                            
+                        <p><b>Adresse</b>
+                <br>Brønndalen 28
+        <br>5176, Loddefjord<br>Norge<br><b>Tlf</b> <br>+46694148<br><br>
+
+        <a href="datingside@gmail.com">Kontakt oss på email</a>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                          </div>
+                          </div>
+
+
+          
+
+</body>
+
+</html>

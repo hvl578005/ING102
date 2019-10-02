@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "no">
+
+<head>
+
+        <meta charset="UTF-8">
+        
+        
+		<meta name="viewport" content="width=device-width, initial-scale=0.8">
+		
+		<link rel="stylesheet" type="text/css" href="design.css">
+		<!--Tittelen på nettleservinduet-->
+		<title>BLI SAMMEN</title>
+
+</head>
+
+<body>
+
+
+ <!-- HER ER HEADER, KONSTANT -->
+                <div class="header">
+                  <h1>bliSammen</h1>
+                  
+                </div>
+               
+
+
+
+ <!-- HER ER HOVEDLINKENE, KONSTANT -->
+ <div class="topnav">
+	<a href="index.html" >Forsiden</a>
+	<ul><li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Om oss</a>
+			<div class="dropdown-content">
+				<a href="kathrine.html">Kathrine</a>
+				<a href="julie.html">Julie</a>
+				<a href="ErlingSide.html">Erling</a>
+				<a href="einar.html">Einar</a>
+				<a href="prosjektetvart.html">Prosjektet vårt</a>
+			</div></li></ul>
+			<a href="registrerdeg.html" >Registrer deg</a>
+			<ul><li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn">Last ned</a>
+			<div class="dropdown-content">
+			<a href="filer/prosjektbeskrivelse.pdf" download="Prosjektbeskrivelse">Prosjektbeskrivelse</a>
+			<a href="filer/statusrapport.pdf" download="Statusrapport">Statusrapport</a>
+		</div></li></ul>
+		</div>
+
+<!--FORSIDE SLIDESHOW-->
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<div class="mySlides fade">
+	  <img src="img/dat3.jpg" alt="blisammen" style="width: 100%; height: 700px;">
+	  <div class="text">TREFFSIKKER MATCHMAKING<br>
+		STUDENTER I BERGEN
+		 </div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <img src="img/dat5.png" alt="blisammen" style="width: 100%; height: 700px;">
+	  <div class="numbertext">Møt single studenter som ønsker et seriøst forhold. <br>
+		Våre brukere er mellom 19 og 29, og alle rett i nærheten av deg</div>
+	</div>
+  
+	<div class="mySlides fade">
+	  <img src="img/dating1.jpg" alt="blisammen" style="width: 100%; height: 700px;">
+	  <div class="numbertext"> Hos oss blir du matchet med de som passer deg, din<br> personlighet og dine interesser best.<br>
+			Registrer deg hos oss og finn kjærligheten i dag!</div>
+	</div>	</div>
+  
+ <!-- Slideshow punktene helt nederst -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span> 
+	<span class="dot" onclick="currentSlide(2)"></span> 
+	<span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+<!-- javascript for slideshow-->
+  <script>
+		var slideIndex = 0;
+		showSlides();
+		
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+			   slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 5000); // Change image every 2 seconds
+		}
+		</script>
+
+</body>
+
+</html>
